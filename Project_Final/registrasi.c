@@ -13,7 +13,7 @@ int main (){
 
     //menuliskan user dan password pada file login.bin
     fprintf(fsignup,"%s",user_pass);
-    fwrite(login, (sizeof(char), sizeof(login)/sizeof(char), fsignup); //agar karakter file login.bin sama dengan array login
+    fwrite(login, (sizeof(char), sizeof(user_pass)/sizeof(char), fsignup); //agar karakter file login.bin sama dengan array login
 
     //menutup file kembali setelah dibuka
     fclose(fsignup);
