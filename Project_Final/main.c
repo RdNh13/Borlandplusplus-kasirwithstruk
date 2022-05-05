@@ -2,11 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int parameter, char *argumen[]){
+int main(int parameter, char *argumen[]){ //parameter harus terpenuhi ./main username password
     //ngecek parameter nya 
     if (parameter != 3) {
         printf("Anda Harus Memasukan username & password saaat menjalankan program ini!!!");
         EXIT_FAILURE;
+        //petunjuk penggunaan CLA
+        printf("\nCara Penggunaan : ./FileAplikasiProgramUtama username password");
     }
     
     //  deklarasikan variable
@@ -19,8 +21,9 @@ int main(int parameter, char *argumen[]){
     // baca file login.bin dengan read
     
     FILE *flogin;
+    //membuat error handling jika file tidak dapat dibuka
     if ((flogin = fopen("Database/login.bin","rb")) == NULL ){
-        printf("Silahkan Cek File Anda!!!");
+        printf("Gagal membuka file, silahkan Cek sekali lagi!!!");
         EXIT_FAILURE;
     }
 
@@ -52,9 +55,9 @@ int main(int parameter, char *argumen[]){
     // printf("pass_pass : %s\n",pass);
 
     if ((strcmp(username,id) == 0) && (strcmp(password,pass)) == 0){
-       printf("selamat anda berhasil login!!");
+       printf("Selamat Anda berhasil login!!");
     }else {
-         printf("anda gagal login!");
+         printf("Anda gagal login!");
         EXIT_FAILURE;
     }
 }
