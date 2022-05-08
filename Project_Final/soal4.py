@@ -1,12 +1,18 @@
-#Apabila data di input dari user 
+#Apabila data di input dari user
+#agar data bisa bebas dimasukkan apa saja
+daftarAngka = []
 
-data_sorting = [int(input()) for i in range (1,9)]
+#meng-set range bilangan 
+for i in range (8):
 
-print("Data yang di Inputkan : ", data_sorting)
-data_sorting.sort()
-print("Data yang di Inputkan sudah di sort : ", data_sorting)
+    x = int(input('daftarAngka : '))
+    #memasukkan angka ke dalam data
+    daftarAngka.append(x)
+print('Daftar Angka sebelum di sorting : ', daftarAngka)
 
-
+#mengurutkan angka yang ada di dalam data
+list.sort(daftarAngka)
+print('Daftar Angka setelah di sorting : ', daftarAngka)
 
 
 
