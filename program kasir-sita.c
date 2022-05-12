@@ -27,6 +27,16 @@ int main()
     {
         case 1:
             {
+                printf("Menu Yang Di Pilih = Air Mineral\n");
+                printf("Masukkan Jumlah Pesanan Air Mineral : ");
+                scanf("%d",&jml);
+                harga=4000;
+                total=harga*jml;
+                printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\n==========================================\n");
+            }break;
+        case 2:
+            {
                 printf("Menu Yang Di Pilih = Ice Tea\n");
                 printf("Masukkan Jumlah Pesanan Ice Tea\t: ");
                 scanf("%d",&jml);
@@ -35,7 +45,7 @@ int main()
                 printf("==>Total Pembayaran\t: Rp. %d",total);
                 printf("\n==========================================\n");
             }break;
-        case 2:
+        case 3:
             {
                 printf("Menu Yang Di Pilih = Caramel Machiato\n");
                 printf("Masukkan Jumlah Pesanan Caramel Machiato\t: ");
@@ -45,7 +55,7 @@ int main()
                 printf("==>Total Pembayaran\t: Rp. %d",total);
                 printf("\n==========================================\n");
             }break;
-        case 3:
+        case 4:
             {
                 printf("Menu Yang Di Pilih = Green Tea Latte\n");
                 printf("Masukkan Jumlah Pesanan Green Tea Latte\t: ");
@@ -55,7 +65,7 @@ int main()
                 printf("==>Total Pembayaran\t: Rp. %d",total);
                 printf("\n==========================================\n");
             }break;
-        case 4:
+        case 5:
             {
                 printf("Menu Yang Di Pilih = Milkshake\n");
                 printf("Masukkan Jumlah Pesanan Milkshake\t: ");
@@ -65,12 +75,22 @@ int main()
                 printf("==>Total Pembayaran\t: Rp. %d",total);
                 printf("\n==========================================\n");
             }break;
-        case 5:
+        case 6:
             {
                 printf("Menu Yang Di Pilih = Chocolate Hazelnut\n");
                 printf("Masukkan Jumlah Pesanan Chocolate Hazelnut\t: ");
                 scanf("%d",&jml);
                 harga=25000;
+                total=harga*jml;
+                printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\n==========================================\n");
+            }break;
+        case 7:
+            {
+                printf("Menu Yang Di Pilih = Hot Espresso\n");
+                printf("Masukkan Jumlah Pesanan Hot Espresso : ");
+                scanf("%d",&jml);
+                harga=20000;
                 total=harga*jml;
                 printf("==>Total Pembayaran\t: Rp. %d",total);
                 printf("\n==========================================\n");
