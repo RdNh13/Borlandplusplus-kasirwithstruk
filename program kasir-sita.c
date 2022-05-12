@@ -3,18 +3,21 @@
 
 int main()
 {
+    /*KAMUS*/
     char nama_pelanggan, bln;
     int harga,tgl,thn, menu, jml, total;
 
-    /*SOURCE CODE*/
-    printf("|<<< Selamat Datang di CAFE BORLAND++  >>>|\n");
+    /*ALGORITMA*/
+    printf("|<<< Selamat Datang di CAFE BORLAND++ >>>|\n");
     printf("|---------------------------------------|\n");
     printf("|Daftar Menu                Harga       |\n");
-    printf("|  1. Ice Tea               @6000       |\n");
-    printf("|  2. Caramel Machiato      @30000      |\n");
-    printf("|  3. Green Tea Latte       @25000      |\n");
-    printf("|  4. Milkshake             @15000      |\n");
-    printf("|  5. Chocolate Hazelnut    @25000      |\n");
+    printf("|  1. Air Mineral           @4000       |\n");
+    printf("|  2. Ice Tea               @6000       |\n");
+    printf("|  3. Caramel Machiato      @30000      |\n");
+    printf("|  4. Green Tea Latte       @25000      |\n");
+    printf("|  5. Milkshake             @15000      |\n");
+    printf("|  6. Chocolate Hazelnut    @25000      |\n");
+    printf("|  7. Hot Espresso          @20000      |\n");
     printf("|---------------------------------------|\n\n");
     printf("Nama Pelanggan = "); scanf("%s",&nama_pelanggan);
     printf("Tanggal Pembelian = "); scanf("%d %s %d",&tgl,&bln,&thn);
