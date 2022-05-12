@@ -33,6 +33,7 @@ int main()
                 harga=4000;
                 total=harga*jml;
                 printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\nTerima Kasih Atas Kunjungannya dan Selamat Menikmati :)");
                 printf("\n==========================================\n");
             }break;
         case 2:
@@ -43,6 +44,7 @@ int main()
                 harga=6000;
                 total=harga*jml;
                 printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\nTerima Kasih Atas Kunjungannya dan Selamat Menikmati :)");
                 printf("\n==========================================\n");
             }break;
         case 3:
@@ -53,6 +55,7 @@ int main()
                 harga=30000;
                 total=harga*jml;
                 printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\nTerima Kasih Atas Kunjungannya dan Selamat Menikmati :)");
                 printf("\n==========================================\n");
             }break;
         case 4:
@@ -63,6 +66,7 @@ int main()
                 harga=25000;
                 total=harga*jml;
                 printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\nTerima Kasih Atas Kunjungannya dan Selamat Menikmati :)");
                 printf("\n==========================================\n");
             }break;
         case 5:
@@ -73,6 +77,7 @@ int main()
                 harga=15000;
                 total=harga*jml;
                 printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\nTerima Kasih Atas Kunjungannya dan Selamat Menikmati :)");
                 printf("\n==========================================\n");
             }break;
         case 6:
@@ -83,6 +88,7 @@ int main()
                 harga=25000;
                 total=harga*jml;
                 printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\nTerima Kasih Atas Kunjungannya dan Selamat Menikmati :)");
                 printf("\n==========================================\n");
             }break;
         case 7:
@@ -93,6 +99,7 @@ int main()
                 harga=20000;
                 total=harga*jml;
                 printf("==>Total Pembayaran\t: Rp. %d",total);
+                printf("\nTerima Kasih Atas Kunjungannya dan Selamat Menikmati :)");
                 printf("\n==========================================\n");
             }break;
         default:
