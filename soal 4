@@ -1,0 +1,15 @@
+def selection_sort(DaftarAngka):
+    for pos_tujuan in range(len(DaftarAngka)-1,0,-1):
+        pos_max = 0
+        for x in range(1,pos_tujuan+1):
+            max_sementara = DaftarAngka[pos_max]
+            if max_sementara < DaftarAngka[x]:
+                pos_max = x
+        DaftarAngka[pos_max],DaftarAngka[pos_tujuan] = DaftarAngka[pos_tujuan],DaftarAngka[pos_max]
+
+
+DaftarAngka = [11, 4, 5, 2, 5, 6, 93, 29]
+
+print(' Daftar Angka sebelum di sorting: ', DaftarAngka)
+selection_sort(DaftarAngka)
+print(' Daftar Angka setelah di sorting: ', DaftarAngka)
