@@ -5,7 +5,7 @@
 int main(int parameter, char *argumen[]){
     //ngecek parameter nya 
     if (parameter != 3) {
-        printf("Anda Harus Memasukan username & password saaat menjalankan program ini!!!");
+        printf("Anda Harus Memasukan username & password saat menjalankan program ini!!!");
         EXIT_FAILURE;
     }
     
