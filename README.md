@@ -1,4 +1,10 @@
 # Project-Final
+CEO: Rama Dhaniansyah
+Anggota:-Marlina
+        -Muhammad Kemal Fasya
+        -Najla Raihana Kamila
+        -Siti Nurrahmasita
+
 Untuk menyelesaikan Project Final 
 
 #Step Pertama 
