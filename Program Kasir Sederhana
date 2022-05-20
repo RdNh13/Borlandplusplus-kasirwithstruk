@@ -1,0 +1,95 @@
+#include <stdio.h>
+int main(){
+    //deklarasi variabel
+    int kode, harga, i = 1;
+    int total_pembelian = 0, diskon, total_bayar, bayar, kembalian;
+    char kar = 'y';
+
+    //membuat tampilan lebih rapi
+    printf("\t\t\t\t--------------------------------------------\n");
+    printf("\t\t\t\t||   SELAMAT DATANG DI CAFE BORLAND++     ||\n");
+    printf("\t\t\t\t--------------------------------------------\n\n");
+    
+    //membuat pilihan menu yang tersedia di cafe borland++ dengan menggunakan kode 
+    printf("\tPilihan Menu : \n");
+    printf("\t1. kode 1:Air Mineral\n\t2. kode 2:Ice Tea\n\t3. kode 3:Caramel Machiato\n\t4. kode 4:Green Tea Latte\n\t5. kode 5:Milkshake\n\t6. kode 6:Chocolate Hazelnut\n\t7. kode 7:Hot Espresso");
+    printf("\tSilahkan pilih menu sesuai kode menu\n");
+
+    //menggunakan perulangan ketika kondisi y
+    while(kar == 'y'){
+        printf("\tMinuman ke - %d : ", i);
+        scanf("%d", &kode); //menginput kode minuman yang ingin dipesan
+        fflush(stdin); //menghilangkan nilai input yang dipakai sebelumnya agar tidak mempengaruhi nilai input selanjutnya
+
+        //memasukkan harga untuk setiap kode menu
+        if(kode == 1){
+            harga = 4000;
+            printf("\tharga Air Mineral = Rp. %d\n\n", harga);
+        }else if(kode == 2){
+            harga = 6000;
+            printf("\tharga Ice Tea = Rp. %d\n\n", harga);
+        }else if(kode == 3){
+            harga = 30000;
+            printf("\tharga Caramel Machiato = Rp. %d\n\n", harga);
+        }else if(kode == 4){
+            harga = 25000;
+            printf("\tharga Green Tea Latte = Rp. %d\n\n", harga);
+        }else if(kode == 5){
+            harga = 15000;
+            printf("\tharga Milkshake = Rp. %d\n\n", harga);
+        }else if(kode == 6){
+            harga = 25000;
+            printf("\tharga Chocolate Hazelnut = Rp. %d\n\n", harga);
+        }else if(kode == 7){
+            harga = 20000;
+            printf("\tharga Hot Espresso = Rp. %d\n\n", harga);
+        }else{
+            printf("Menu tidak ditemukan"); //apabila dimasukkan kode selain yang ada
+        }
+    total_pembelian = total_pembelian+harga;
+    //ketik y atau yes ketika ingin menambah pemesanan minuman, pilih n atau no ketika tidak ingin menambah pemesanan minuman lagi
+    printf("\tIngin menambah pemesanan? [y/n] =  ");
+    scanf("%c", &kar);
+    printf("\n");
+    i++;
+    }
+    printf("\t---------------------------------------------------------------------------------\n");
+    printf("\tTotal pembelian                = Rp. %d\n", total_pembelian);
+
+    //diskon 5% jika total pembelian lebih dari 100000
+    if(total_pembelian > 100000){
+        diskon = 0.05*total_pembelian;
+        printf("\tAnda berhasil mendapatkan diskon sebesar = %d\n", diskon);
+        total_bayar = total_pembelian - diskon; //total yang harus dibayar ketika mendapatkan diskon
+    }else{
+        total_bayar = total_pembelian; //total yang harus dibayar ketika tidak mendapatkan diskon
+    }
+
+    printf("\tTotal yang harus dibayar       = Rp. %d\n", total_bayar);
+    printf("\tMasukkan nominal yang Anda bayar = Rp. ", bayar);
+    scanf("%d", &bayar);
+
+    //jika uang yang dibayar lebih besar dari uang total yang harus dibayar maka akan ada kembalian
+    kembalian = bayar - total_bayar;
+    if(bayar > total_bayar){
+        printf("\tUang kembalian Anda        = Rp. %d\n", kembalian);
+    }else{
+        printf("\tuang Anda kurang           = Rp. %d\n", total_bayar - bayar);
+    }
+
+    //mendapatkan promo gratis satu milkshake jika total pembelian lebih dari 250000
+    if(total_pembelian > 250000){
+        printf("\t\t\t   SELAMAT ANDA MENDAPATKAN PROMO GRATIS SATU MILKSHAKE\n");
+    }else{
+        printf("\t\t\t              ANDA TIDAK MENDAPATKAN BONUS\n");
+    }
+    
+    printf("\t---------------------------------------------------------------------------------\n");
+    printf("\t\t\t   TERIMA KASIH ATAS KUNJUNGANNYA DAN SELAMAT MENIKMATI\n");
+    printf("\t\t\t\t      SEMOGA HARI ANDA MENYENANGKAN\n");
+
+    printf("\n\n");
+    system("\tpause");
+
+
+}
